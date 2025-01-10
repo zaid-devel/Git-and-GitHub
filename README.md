@@ -304,6 +304,68 @@ git stash apply
 git stash drop
 ```
 
+## Git Revert
+   
+Purpose: Create a new commit that undoes changes from a previous commit (without modifying history).
+*Command:*
+
+```bash
+git revert <commit-hash>
+```
+
+Example:
+
+```bash
+git revert a1b2c3d
+```
+
+## Git Tag
+Purpose: Mark specific commits (often for releases).
+Types:
+Lightweight tag: Simple pointer to a commit.
+
+```bash
+git tag v1.0
+```
+
+*Annotated tag: Includes metadata.*
+
+```bash
+git tag -a v1.0 -m "Release version 1.0"
+```
+
+Commands:
+*Push tags:*
+
+```bash
+git push origin <tag-name>
+```
+
+*List tags:*
+
+```bash
+git tag
+```
+
+## Git Clone
+Purpose: Create a local copy of a remote repository.
+Command:
+
+```bash
+git clone <repository-url>
+```
+
+Example:
+```bash
+git clone https://github.com/username/repository.git
+```
+
+*Clone a specific branch:*
+
+```bash
+git clone -b <branch-name> <repository-url>
+```
+
 # Git Workflows
 There are different ways to work with Git, depending on how the team uses it. Here are some common workflows:
 
